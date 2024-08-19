@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaisyUI Explore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-4/5 lg:w-full mx-auto border-2 border-red-400 py-20">
+        <h1 class="text-2xl font-extrabold">Hi, This is my first test with daisyUI</h1>
+    <button class="btn btn-ghost btn-lg">Explore More</button>
+    <button class="btn btn-outline btn-secondary">Click Here</button>
+    <button class="btn btn-neutral">start here</button>
+
+    <!-- dropdown test -->
+    <div class="dropdown bg-red-500">
+        <div tabindex="0" role="button" class="btn m-1">Click</div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li><a>Item 1</a></li>
+          <li><a>Item 2</a></li>
+        </ul>
+      </div>
+       
+    </section>
+
+    <section>
+        <!-- modals -->
+        <!-- You can open the modal using ID.showModal() method -->
+<button class="btn bg-yellow-600" onclick="my_modal_3.showModal()">open modal</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">This is Ebu!</h3>
+    <p class="py-4">Press ESC key or click on ✕ button to close</p>
+  </div>
+</dialog>
+    </section>
+
+    <!-- swap -->
+    <label class="swap swap-flip text-5xl">
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+      
+        <div class="swap-on">😈</div>
+        <div class="swap-off">😇</div>
+      </label>
+
+
+      <!-- theme controler -->
+      <input type="checkbox" value="synthwave" class="toggle theme-controller" />
+
+      <div class="form-control">
+        <label class="label cursor-pointer gap-4">
+          <span class="label-text">Default</span>
+          <input type="radio" name="theme-radios" class="radio theme-controller" value="default" />
+        </label>
+      </div>
+      <div class="form-control">
+        <label class="label cursor-pointer gap-4">
+          <span class="label-text">Retro</span>
+          <input type="radio" name="theme-radios" class="radio theme-controller" value="retro" />
+        </label>
+      </div>
+      <div class="form-control">
+        <label class="label cursor-pointer gap-4">
+          <span class="label-text">Cyberpunk</span>
+          <input type="radio" name="theme-radios" class="radio theme-controller" value="cyberpunk" />
+        </label>
+      </div>
+      <div class="form-control">
+        <label class="label cursor-pointer gap-4">
+          <span class="label-text">Valentine</span>
+          <input type="radio" name="theme-radios" class="radio theme-controller" value="valentine" />
+        </label>
+      </div>
+      <div class="form-control">
+        <label class="label cursor-pointer gap-4">
+          <span class="label-text">Aqua</span>
+          <input type="radio" name="theme-radios" class="radio theme-controller" value="aqua" />
+        </label>
+      </div>
+
+      <!-- accordion -->
+      <div class="collapse bg-yellow-200 w-3/5">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200 bg-red-200 w-3/5">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">whats your name?</div>
+        <div class="collapse-content">
+          <p>Ebu</p>
+        </div>
+      </div>
+      <div class="collapse bg-base-200 bg-blue-200 w-3/5">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+
+
+      <!-- avatar -->
+      <div class="avatar-group -space-x-6 rtl:space-x-reverse">
+        <div class="avatar">
+          <div class="w-12">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <div class="avatar">
+          <div class="w-20">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <div class="avatar">
+          <div class="w-12">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <div class="avatar">
+          <div class="w-12">
+            <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="card glass w-96 mx-auto">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="car!" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Life hack</h2>
+          <p>How to park your car at your garage?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-neutral">Learn now!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- carousel -->
+      <div class="carousel carousel-vertical rounded-box w-96 h-96 mx-auto">
+        <div class="carousel-item h-full mx-auto">
+          <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp" />
+        </div>
+        <div class="carousel-item h-full">
+          <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp" />
+        </div>
+      </div>
+</body>
+</html>
